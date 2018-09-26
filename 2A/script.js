@@ -1,14 +1,14 @@
-class User {
+class Passenger {
 
   constructor(name) {
     this.name = name;
   }
 
   sayHi() {
-    alert(this.name);
+    console.log(this.name);
   }
 
 }
 
-let user = new User("John");
+let user = new Passenger("Bob");
 user.sayHi();
