@@ -34,7 +34,7 @@ class Airline {
 
 }
 
-class Passenger {
+class Luggage {
 
   constructor(name) {
     this.name = name;

@@ -19,15 +19,17 @@ function divClick(one,two){
   getOut(one / two);
 }
 
-function nthRoot(x, n){
-  ng = n % 2;
-  if((ng == 1) || x<0)
-    x = -x;
-  var r = Math.pow(x, 1 / n);
-  n = Math.pow(r, n);
-  
-  if(Math.abs(x - n) < 1 && (x > 0 === n > 0))
-    getOut(ng ? -r : r) 
+function quadClick(one, two){
+  let c = one;
+  for(let i=1; i<two; i++)
+    {
+      c = c * one;
+    }
+  getOut(c)
+}
+
+function wortelClick(one){
+  getOut(Math.sqrt(one))
 }
 
 function getOut(answer){
@@ -44,7 +46,9 @@ window.onload = function(){
   mulClick(25,25)
   this.console.log("moet zijn 2")
   divClick(8,4)
-  this.console.log("moet zijn 5")
-  nthRoot(25,2)
+  this.console.log("moet zijn 625")
+  quadClick(25,2)
+  this.console.log("moet zijn 5.477225575051661")
+  wortelClick(30)
   document.getElementById("output").innerHTML = null;
 }

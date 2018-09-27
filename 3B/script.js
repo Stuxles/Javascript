@@ -9,6 +9,7 @@ function uClicked(){
   //set word commands
   if(!word){
     //set input value to word
+    input.value = input.value.toLowerCase()
     word = input.value;
     //split word to array
     wordArray = word.split("")
