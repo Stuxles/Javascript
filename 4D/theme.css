@@ -1,0 +1,23 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(103, 156, 255)
+}
+.mid{
+    margin: auto;
+    width: 30%;
+    height: 100%;
+    background-color: aliceblue;
+}
+
+#center{
+    text-align: center;
+}
+
+#button{
+    background-color: rgb(134, 0, 105);
+    color:#ffffff;
+    border-radius: 5px;
+    text-align:center;
+    margin-top:2px;
+    padding: 5px 15px;
+}
