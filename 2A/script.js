@@ -47,3 +47,4 @@ class Luggage {
 }
 
 let user = new Passenger("Bob");
+user.sayHi()

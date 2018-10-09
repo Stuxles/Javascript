@@ -59,7 +59,7 @@ function uClicked(){
             score--
           }
         }else{
-          //check if playerr has guessed the maximum times and shows lose message
+          //check if player has guessed the maximum times and shows lose message
           if(tries >= 6){
             tries++
             window.alert("You lose");
